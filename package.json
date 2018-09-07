@@ -21,7 +21,7 @@
     "name": "keyarea",
     "email": "mail@loong.io"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/keyarea/hexo-theme-loong/issues"
   },
