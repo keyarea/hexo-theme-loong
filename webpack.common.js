@@ -1,22 +1,46 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+minifyHTML = {
+    collapseInlineTagWhitespace: true,
+    collapseWhitespace: true,
+    minifyJS:true
+}
 
 module.exports = {
-    entry: {
+    entry: { //入口文件
         main: path.resolve(__dirname,'src/js/main.js')
     },
-    plugins: [
+    plugins: [  //插件配置节点
         new CleanWebpackPlugin(['source']),
-        new HtmlWebpackPlugin()
+        new MiniCssExtractPlugin({
+            filename: "[name].[chunkhash:8].css",
+            chunkFilename: "[id].css"
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            cache: false,
+            minify: minifyHTML,
+            template: path.resolve(__dirname,'src/script.ejs'),
+            filename: path.resolve(__dirname,'layout/_partial/script.ejs')
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            cache: false,
+            minify: minifyHTML,
+            template: path.resolve(__dirname,'src/css.ejs'),
+            filename: path.resolve(__dirname,'layout/_partial/css.ejs')
+        })
     ],
-    output: {
-        path: path.resolve(__dirname,'source'),
+    output: { //指定输出选项
+        path: path.resolve(__dirname,'source'),   //输出路径
         publicPath: "./",
-        filename: "[name].bundle.js"
+        filename: "[name].[chunkhash:6].js"       //指定输出文件的名称
     },
-    module: {
-        rules: [
+    module: {  //第三方loader模块
+        rules: [  //第三方模块匹配规则
             {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
@@ -24,10 +48,20 @@ module.exports = {
                 loader: 'babel-loader?cacheDirectory',
                 options: {
                   presets: ['@babel/preset-env'],
-                  plugins: [require('@babel/plugin-proposal-object-rest-spread')]
-                }
+                  plugins: ['@babel/transform-runtime']
+                    }
+               }
+            },
+            {
+                test: /\.(sa|sc|c)ss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader'
+                ]
             }
-        }
+
 
         ]
     }

@@ -1,0 +1,4 @@
+<% var left = '<%=' %>
+<% var right = '%' %>
+<% var right2 = '>' %>
+<% for (var chunk in htmlWebpackPlugin.files.chunks) { %><% if (chunk === 'main') { %><script src="<%= left %>config.root<%= right %><%= right2 %><%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script><% } %><% } %>
