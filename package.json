@@ -4,11 +4,28 @@
   "description": "a blog theme of hexo",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "watch": "webpack --config webpack.prod.js --watch"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keyarea/hexo-theme-loong.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "theme",
+    "loong"
+  ],
+  "author": {
+    "name": "keyarea",
+    "email": "mail@loong.io"
+  },
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyarea/hexo-theme-loong/issues"
+  },
+  "homepage": "https://github.com/keyarea/hexo-theme-loong#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.0.0",

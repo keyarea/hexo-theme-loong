@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>  <%
+        var title = page.title;
+      
+        if (is_archive()){
+          title = 'Archives';
+      
+          if (is_month()){
+            title += ': ' + page.year + '/' + page.month;
+          } else if (is_year()){
+            title += ': ' + page.year;
+          }
+        } else if (is_category()){
+          title = 'Category: ' + page.category;
+        } else if (is_tag()){
+          title = 'Tag: ' + page.tag;
+        }
+        %>
+
         <meta charset="utf-8">
         <meta name="renderer" content="webkit">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" >
