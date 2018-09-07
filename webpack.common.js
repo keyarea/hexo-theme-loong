@@ -60,6 +60,28 @@ module.exports = {
                     'postcss-loader',
                     'sass-loader'
                 ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 8192,
+                        fallback: 'file-loader',
+                        name: '[name].[ext]',
+                        outputPath: 'img/'
+                    }
+                }
+            },
+            {
+                test: /\.(woff|woff2|eot|otf)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[hash:6].[ext]',
+                        outputPath: 'fonts/'
+                    }
+                }
             }
 
 

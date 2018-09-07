@@ -1,0 +1,2 @@
+console.log('%c【LOONG】','text-shadow:2px 2px 2px rgba(0,0,0,.2);font-size:40px','version:1.0.0');
+console.log('%c github: https://github.com/keyarea/hexo-theme-loong','text-shadow:2px 2px 2px rgba(0,0,0,.2);font-size:14px')
