@@ -1,0 +1,12 @@
+@import "color";
+
+.header-color{
+    color: $header-color;
+    background-color: $header-bg-color;
+}
+
+.navbar-header-left{
+    @media screen and (min-width: 768px) {
+        float: left;
+    }
+}

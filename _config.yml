@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
 menu:
-  Home: /
-  Archives: /archives
-  Github: https://github.com/keyarea
+  home: /
+  archives: /archives
+  categories: /categories
+  tags: /tags
+  about: /about
