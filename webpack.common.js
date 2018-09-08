@@ -9,12 +9,22 @@ minifyHTML = {
     minifyJS:true
 }
 
+let pathToClean = [
+    'source'
+]
+
+let cleanOptions = {
+    watch: true
+}
+
+
+
 module.exports = {
     entry: { //入口文件
         main: path.resolve(__dirname,'src/js/main.js')
     },
     plugins: [  //插件配置节点
-        new CleanWebpackPlugin(['source']),
+        new CleanWebpackPlugin(pathToClean, cleanOptions),
         new MiniCssExtractPlugin({
             filename: "[name].[chunkhash:8].css",
             chunkFilename: "[id].css"
