@@ -3,7 +3,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-minifyHTML = {
+let minifyHTML = {
     collapseInlineTagWhitespace: true,
     collapseWhitespace: true,
     minifyJS:true
@@ -27,7 +27,7 @@ module.exports = {
         new CleanWebpackPlugin(pathToClean, cleanOptions),
         new MiniCssExtractPlugin({
             filename: "[name].[chunkhash:8].css",
-            chunkFilename: "[id].css"
+            //chunkFilename: "[id].css"
         }),
         new HtmlWebpackPlugin({
             inject: false,
@@ -84,7 +84,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(woff|woff2|eot|otf)$/,
+                test: /\.(woff|woff2|eot|otf|ttf)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
