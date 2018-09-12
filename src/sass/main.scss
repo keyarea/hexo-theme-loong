@@ -3,14 +3,6 @@
 @import 'media';
 @import 'header';
 
-* {
-    box-sizing: border-box;
-}
-
-.clearfix:before, .clearfix:after{
-    display: table;
-    content: " ";
-}
 
 html.bg {
     background-image: -webkit-radial-gradient(-20% 140%,ellipse,rgba(143,192,193,.6) 30%,rgba(255,255,227,0) 50%),
@@ -25,33 +17,6 @@ html.bg {
     background-attachment: fixed;
     background-size: cover;
 }
-
-.app {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-}
-
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.app.container {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.visible-xs {
-    display: none !important;
-    @media screen and (max-width: 768px) {
-        display: block !important;
-    }
-}
-
 
 
 

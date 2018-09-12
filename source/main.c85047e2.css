@@ -1,0 +1,13 @@
+html.bg {
+  background-image: -webkit-radial-gradient(-20% 140%, ellipse, rgba(143, 192, 193, 0.6) 30%, rgba(255, 255, 227, 0) 50%), -webkit-radial-gradient(60% 40%, ellipse, #d9e3e5 10%, rgba(44, 70, 76, 0) 60%), -webkit-linear-gradient(-45deg, rgba(143, 181, 158, 0.8) -10%, rgba(213, 232, 211, 0.8) 80%);
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: repeat;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-attachment: fixed;
+  background-size: cover; }
+
+
+/*# sourceMappingURL=main.c85047e2.css.map*/
