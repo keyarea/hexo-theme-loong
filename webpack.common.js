@@ -14,7 +14,8 @@ let pathToClean = [
 ]
 
 let cleanOptions = {
-    watch: true
+    watch: true,
+    exclude: ['source/assets']
 }
 
 

@@ -7,3 +7,9 @@ menu:
   categories: /categories
   tags: /tags
   about: /about
+
+# ---------------------------------------------------------------
+# Favicon Settings
+# ---------------------------------------------------------------
+
+favicon: /assets/loong.jpeg

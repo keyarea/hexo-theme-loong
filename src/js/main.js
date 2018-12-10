@@ -4,5 +4,3 @@ import '../sass/main.scss';
 import './console';
 //加载图片
 import '../img/hello.svg';
-//加载字体
-import '../font/iconfont.woff';
