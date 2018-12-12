@@ -1,6 +1,10 @@
-@import "pure-min.css";
+@import 'normalize.css';
 
-@import 'init';
+@import "pure";
+
+@import "variables";
+
+@import "global";
 
 @import 'body';
 
@@ -19,6 +23,7 @@
 
 // 字体图标库
 @import 'font-awesome';
+
 
 
 

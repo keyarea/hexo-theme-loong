@@ -1,0 +1,18 @@
+a{
+  text-decoration: none;
+  transition: all .1s ease-in;
+  outline:none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  &:focus{
+    outline:0;
+  }
+  &:link,
+  &:visited {
+    color: $defaultColor;
+    text-decoration:none;
+  }
+  &:hover,
+  &:active {
+    color: #444;
+  }
+}

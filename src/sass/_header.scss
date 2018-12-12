@@ -10,6 +10,10 @@
     #logo {
       font: bold 38px/1.12 "Times New Roman", Georgia, Times, sans-serif;
       color: #555;
+
+      &:hover {
+        color: #777;
+      }
     }
 
     .description {
@@ -25,7 +29,7 @@
     right: 0;
     bottom: 0;
 
-    .nav-item {
+    a {
       display: inline-block;
       padding: 3px 20px 3px;
       line-height: 30px;
@@ -33,10 +37,15 @@
       font-size: 13px;
       border: 1px solid transparent;
 
+      &:hover {
+        border-bottom-color: #444;
+      }
+
       &.current {
         border: 1px solid #ddd;
         border-bottom-color: #fff;
       }
+
     }
   }
 }
