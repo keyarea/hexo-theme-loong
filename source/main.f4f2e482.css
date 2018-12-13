@@ -423,51 +423,50 @@ body {
   max-width: 1150px;
   margin: 0 auto; }
 
-#content {
-  height: 100px; }
+#content .content_container {
+  padding-right: 50px;
+  padding-top: 20px; }
 
-#aside {
-  width: 25%; }
-  #aside .sidebar {
-    border-left: 1px solid #ddd;
-    padding-left: 35px;
-    margin-top: 40px;
-    padding-bottom: 20px;
-    word-wrap: break-word; }
-    #aside .sidebar .sidebar-item {
-      margin-bottom: 30px; }
-      #aside .sidebar .sidebar-item .form-search {
-        position: relative;
-        overflow: hidden; }
-        #aside .sidebar .sidebar-item .form-search input {
-          background: #fff 8px 8px no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);
-          padding: 7px 11px 7px 28px;
-          line-height: 16px;
-          border: 1px solid #bbb;
-          border-radius: 5px;
-          box-shadow: none; }
-      #aside .sidebar .sidebar-item .sidebar-item-title {
-        color: #6E7173;
-        line-height: 2.7;
-        margin-top: 0;
-        font-size: 16px;
-        border-bottom: 1px solid #ddd;
-        display: block;
-        font-weight: normal; }
-      #aside .sidebar .sidebar-item ul {
-        list-style: none;
-        padding: 0;
-        margin-top: 1em;
-        margin-bottom: 1em; }
-        #aside .sidebar .sidebar-item ul li {
-          margin: 5px 0;
-          line-height: 1.5; }
-      #aside .sidebar .sidebar-item .tagcloud {
-        margin-top: 10px; }
-        #aside .sidebar .sidebar-item .tagcloud .tagcloud-item {
-          font-size: 15px;
-          line-height: 1.5;
-          padding: 5px; }
+#aside .sidebar {
+  border-left: 1px solid #ddd;
+  padding-left: 35px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  word-wrap: break-word; }
+  #aside .sidebar .sidebar-item {
+    margin-bottom: 30px; }
+    #aside .sidebar .sidebar-item .form-search {
+      position: relative;
+      overflow: hidden; }
+      #aside .sidebar .sidebar-item .form-search input {
+        background: #fff 8px 8px no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);
+        padding: 7px 11px 7px 28px;
+        line-height: 16px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+        box-shadow: none; }
+    #aside .sidebar .sidebar-item .sidebar-item-title {
+      color: #6E7173;
+      line-height: 2.7;
+      margin-top: 0;
+      font-size: 16px;
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-weight: normal; }
+    #aside .sidebar .sidebar-item ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1em;
+      margin-bottom: 1em; }
+      #aside .sidebar .sidebar-item ul li {
+        margin: 5px 0;
+        line-height: 1.5; }
+    #aside .sidebar .sidebar-item .tagcloud {
+      margin-top: 10px; }
+      #aside .sidebar .sidebar-item .tagcloud .tagcloud-item {
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 5px; }
 
 #footer {
   padding: .8em 0 3.6em;
@@ -479,6 +478,47 @@ body {
     color: #337ab7; }
     #footer a:hover {
       text-decoration: underline; }
+
+.posts .post {
+  padding: 25px 0 15px; }
+  .posts .post .post-title {
+    margin: 0;
+    color: #555;
+    text-align: left;
+    font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
+  .posts .post .post-meta {
+    padding: 0;
+    margin: 15px 10px 0 0;
+    color: #6E7173;
+    float: left;
+    display: inline;
+    text-indent: .15em; }
+  .posts .post .post-content {
+    clear: left;
+    font-size: 15px;
+    line-height: 1.77;
+    color: #444444;
+    padding-top: 15px;
+    text-align: justify;
+    word-break: normal; }
+  .posts .post .readmore {
+    display: block;
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px; }
+    .posts .post .readmore a {
+      font-size: 14px;
+      color: #444;
+      margin: -10px 0;
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      float: right; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2806,4 +2846,4 @@ body {
   clip: auto; }
 
 
-/*# sourceMappingURL=main.47a5dd31.css.map*/
+/*# sourceMappingURL=main.f4f2e482.css.map*/

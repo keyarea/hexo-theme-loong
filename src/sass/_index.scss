@@ -1,0 +1,48 @@
+.posts {
+  .post {
+    padding: 25px 0 15px;
+
+    .post-title {
+      margin: 0;
+      color: #555;
+      text-align: left;
+      font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+    }
+
+    .post-meta {
+      padding: 0;
+      margin: 15px 10px 0 0;
+      color: #6E7173;
+      float: left;
+      display: inline;
+      text-indent: .15em;
+    }
+    .post-content {
+      clear: left;
+      font-size: 15px;
+      line-height: 1.77;
+      color: rgb(68, 68, 68);
+      padding-top: 15px;
+      text-align: justify;
+      word-break: normal;
+    }
+
+    .readmore {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+
+      a {
+        font-size: 14px;
+        color: #444;
+        margin: -10px 0;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        float: right;
+      }
+    }
+  }
+}

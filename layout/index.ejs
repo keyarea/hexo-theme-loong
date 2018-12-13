@@ -2,14 +2,32 @@
     <% page.posts.each(function (post) { %>
       <article class="post">
         <div class="post-title">
-          <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
-        </div>
-        <div class="post-content">
-          <%- post.excerpt %>
+          <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title || 无标题 %></a>
         </div>
         <div class="post-meta">
-          <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+            <i class="fa fa-calendar"></i>
+            <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
         </div>
+          <% post.tags.forEach(function(tag){ %>
+          <div class="post-meta">
+              <a href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>">
+                  <i class="fa fa-tag"></i>
+                  <span class="post-tag">
+                    <%= tag.name %>
+                  </span>
+              </a>
+          </div>
+              <%})%>
+        <div class="post-content">
+            <%- truncate(strip_html(post.content), {length: theme.abstract ,omission: '...'})  %>
+        </div>
+          <p class="readmore">
+              <a href="<%- url_for(post.path)%>">
+                  阅读全文
+                  <i class="fa fa-angle-double-right"></i>
+              </a>
+          </p>
+
       </article>
     <% }) %>
   </section>
