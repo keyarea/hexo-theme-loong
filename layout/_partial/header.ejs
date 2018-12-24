@@ -1,27 +1,14 @@
 <header id="header">
     <div class="site-title">
-        <a href="" id="logo">博客</a>
-        <p class="description">分享自己遇到过的技术问题以及值得收藏的内容</p>
+        <a href="<%- url_for() %>" id="logo"><%- config.title %></a>
+        <p class="description"><%- config.description %></p>
     </div>
 
     <nav class="nav">
-        <a class="nav-item current" href="#">
-            <i class="fa fa-home fa-fw"></i>&nbsp; 首页
-        </a>
-        <a class="nav-item" href="#">
-            <i class="fa fa-archive fa-fw"></i>&nbsp; 归档
-        </a>
-        <a class="nav-item" href="#">
-            <i class="fa fa-user fa-fw"></i>&nbsp; 关于
-        </a>
-        <a class="nav-item" href="#">
-            <i class="fa fa-history fa-fw"></i>&nbsp; 历史
-        </a>
-        <a class="nav-item" href="#">
-            <i class="fa fa-comments fa-fw"></i>&nbsp; 留言
-        </a>
-        <a class="nav-item" href="#">
-            <i class="fa fa-rss fa-fw"></i>&nbsp; 订阅
-        </a>
+        <% theme.menu.forEach(function(item){ %>
+            <a class="nav-item" href="<%- url_for(item.directory) %>">
+                <i class="fa <%- item.icon %> fa-fw"></i>&nbsp; <%- item.page %>
+            </a>
+        <% }) %>
     </nav>
 </header>

@@ -2,11 +2,24 @@
 # Menu Settings
 # ---------------------------------------------------------------
 menu:
-  home: /
-  archives: /archives
-  categories: /categories
-  tags: /tags
-  about: /about
+  - page: home
+    dirctory: .
+    icon: fa-home
+  - page: archives
+    dirctory: /archives
+    icon: fa-archive
+  - page: about
+    dirctory: /about
+    icon: fa-user
+  - page: history
+    dirctory: /history
+    icon: fa-history
+  - page: comments
+    dirctory: /comments
+    icon: fa-comments
+  - page: rss
+    dirctory: /atom.rss
+    icon: fa-rss
 
 # ---------------------------------------------------------------
 # Favicon Settings
